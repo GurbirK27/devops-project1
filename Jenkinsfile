@@ -13,6 +13,6 @@ node {
     }
 
     stage('Notify Email') {
-        sh 'Sending email'
+        sh 'echo Sending email'
     }
 }
