@@ -6,10 +6,10 @@ node {
     }
 
     stage('Copy HTML') {
-        sh 'sudo cp index.html /var/www/html/'
+        sh 'cp index.html /var/www/html/'
     }
     stage('Copy Images') {
-        sh 'sudo cp -r images/ /var/www/html/'
+        sh 'cp -r images/ /var/www/html/'
     }
 
     stage('Notify Email') {
